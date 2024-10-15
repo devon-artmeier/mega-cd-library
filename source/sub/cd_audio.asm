@@ -93,7 +93,7 @@ SeekCdAudioTime:
 	move.l	d0,(a0)
 	moveq	#MSCSEEKT,d0
 	jmp	_CDBIOS
-
+	
 ; ------------------------------------------------------------------------------
 ; Stop CD audio
 ; ------------------------------------------------------------------------------
@@ -135,11 +135,11 @@ FastForwardCdAudio:
 	jmp	_CDBIOS
 
 ; ------------------------------------------------------------------------------
-; Fast reverse CD audio
+; Fast rewind CD audio
 ; ------------------------------------------------------------------------------
 
-FastReverseCdAudio:
-	moveq	#MSCSCANFR,d0					; Set fast reverse
+FastRewindCdAudio:
+	moveq	#MSCSCANFR,d0					; Set fast rewind
 	jmp	_CDBIOS
 
 ; ------------------------------------------------------------------------------
