@@ -58,11 +58,11 @@ WORD_RAM_IMAGE_SIZE	equ 0x20000				; Word RAM image size (1M/1M)
 WORD_RAM_IMAGE_END	equ WORD_RAM_IMAGE+WORD_RAM_IMAGE_SIZE	; Word RAM image size (1M/1M)
 
 ; Backup RAM cartridge
-BURAM_CART_ID		equ CARTRIDGE+1				; RAM cartridge ID
-BURAM_CART_DATA		equ CARTRIDGE+0x200001			; RAM cartridge data
-BURAM_CART_DATA_SIZE	equ 0x80000				; RAM cartridge data size
-BURAM_CART_DATA_END	equ RAM_CART_DATA+RAM_CART_DATA_SIZE	; RAM cartridge data end
-BURAM_CART_PROTECT	equ CARTRIDGE+0x3FFFFF			; RAM cartridge memory protection flag
+RAM_CART_ID		equ CARTRIDGE+1				; RAM cartridge ID
+RAM_CART_DATA		equ CARTRIDGE+0x200001			; RAM cartridge data
+RAM_CART_DATA_SIZE	equ 0x80000				; RAM cartridge data size
+RAM_CART_DATA_END	equ RAM_CART_DATA+RAM_CART_DATA_SIZE	; RAM cartridge data end
+RAM_CART_PROTECT	equ CARTRIDGE+0x3FFFFF			; RAM cartridge memory protection flag
 
 ; Special cartridge
 SPECIAL_CART_ID		equ CARTRIDGE+0x10			; Special cartridge ID
