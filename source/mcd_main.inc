@@ -198,7 +198,7 @@ _BURAM			equ 0xFFFFFDAE				; Cartridge Backup RAM function
 VERR_VER_BIT		equ 0					; Hardware version
 VERR_VER		equ 1<<VERR_VER_BIT
 VERR_DISK_BIT		equ 5					; Expansion connected flag
-VERR_DISK		equ 1<<VERR_DISK
+VERR_DISK		equ 1<<VERR_DISK_BIT
 VERR_VMOD_BIT		equ 6					; Video mode flag
 VERR_VMOD		equ 1<<VERR_VMOD_BIT
 VERR_MODE_BIT		equ 7					; Region flag
